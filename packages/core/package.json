@@ -1,6 +1,17 @@
 {
   "name": "@barba/core",
   "version": "1.0.0",
-  "main": "src/index.ts",
-  "license": "MIT"
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "tsup src/index.ts --dts --watch",
+    "build": "tsup src/index.ts --dts --minify"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^5.5.3"
+  },
+  "devDependencies": {
+    "tsup": "^8.2.3"
+  }
 }
